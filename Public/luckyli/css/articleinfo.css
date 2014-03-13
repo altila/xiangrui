@@ -1,0 +1,54 @@
+.article_border_left {
+  border-left: 1px solid #85ABB2;
+  padding-left: 20px;
+  overflow: hidden;
+  height: 300px;
+}
+.article_heading {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 32px;
+  color: #22ac38;
+  margin: 20px 0 50px;
+}
+.article_image {
+  height: 300px;
+}
+.article_image img {
+  height: 300px;
+}
+.article_share,
+.article_publish_time {
+  color: #0088cc;
+}
+.article_publish_time {
+  border-top: 1px solid #85ABB2;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.article_nav .gradient_border_inner {
+  padding: 5px 10px;
+}
+.milestone_wrap {
+  overflow: hidden;
+  height: 360px;
+}
+.milestone_wrap td {
+  padding: 5px 10px;
+  color: #22ac38;
+}
+.milestone_wrap td:first-child {
+  border-right: 1px solid #85ABB2;
+}
+.milestone_wrap td td:first-child {
+  width: 60px;
+  line-height: 30px;
+  border: none;
+}
+.milestone_wrap .milestone_items {
+  height: 360px;
+}
+.milestone_wrap .m_item {
+  float: left;
+  width: 738px;
+}

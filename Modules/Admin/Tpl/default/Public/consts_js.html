@@ -1,0 +1,38 @@
+<script  type="text/javascript">
+
+/**
++----------------------------------------------------------
+* 静态常量
++----------------------------------------------------------
+* @access  public
+* @param   string      v
++----------------------------------------------------------
+* @return  string
++----------------------------------------------------------
+* @example consts('www')
++----------------------------------------------------------
+*/
+function consts(v){
+	var cons = {
+		url          :   '__URL__',
+		app          :   '__APP__',
+		public       :   '__PUBLIC__',
+		jsUrl        :   '{:U(__ACTION__)}',
+		moduleNmae   :   '{$Think.const.MODULE_NAME}',
+		sourceCode   :   '{$sourceCode}',
+		returnUrl    :   '{$returnUrl}',
+		siteMark     :   '{$siteMark}',
+		www          :   'http://www.{$Think.config.domain}',
+		Admin        :   'http://www.{$Think.config.domain}/Admin',
+		User         :   'http://www.{$Think.config.domain}/User',
+		Api          :   'http://www.{$Think.config.domain}/Api'
+	};
+	return cons[v];
+}
+
+//默认图片
+var defaultImg = '{:C('DEFAULT_IMG')}';
+//ueditor路径
+window.UEDITOR_HOME_URL = '/Public/ueditor/js/';
+</script>
+
