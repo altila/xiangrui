@@ -73,14 +73,14 @@
 						<input type="checkbox" name="show_position[]" <if condition=" ($vo['show_position']&2) == 2 ">checked</if> value="2">中部
 						<input type="checkbox" name="show_position[]" <if condition=" ($vo['show_position']&4) == 4 ">checked</if> value="4">底部
 					</div>
-					<div class="unit">
-						<label>菜单样式：</label>
-						<input type="text" name="class" value="{$vo['class']}">
-					</div>
 				</div>
 			</div>
 			<div>
 				<div class="pageFormContent" layoutH="188">
+					<div class="unit">
+						<label>菜单样式：</label>
+						<input type="text" name="class" value="{$vo['class']}">
+					</div>
 					<div class="unit">
 						<label>模板名称：</label>
 						<input type="text" name="template" value="{$vo['template']}">
