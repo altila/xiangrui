@@ -36,8 +36,8 @@
 					</div>
 					<div class="unit">
 						<label>菜单模型：</label>
-						<select name="model">
-							<option <eq name="vo['model']" value="1" >selected</eq> value="1">文章</option>
+						<select name="model" id="model">
+							<option <eq name="vo['model']" value="0" >selected</eq> value="0">单篇内容</option>
 							<option <eq name="vo['model']" value="2" >selected</eq> value="2">图片集</option>
 							<?php $isEnableProduct = explode( ',', findById ( 'Admin/SiteConfig', array('key'=>'isEnableProduct','status'=>'1'), 'sids' ) ); ?>
 							<if condition="( isset($vo['sid']) and in_array( $vo['sid'], $isEnableProduct ) ) or ( isset($_REQUEST['sid']) and in_array( $_REQUEST['sid'], $isEnableProduct ) ) ">
@@ -55,14 +55,20 @@
 							<option <eq name="vo['model']" value="6" >selected</eq> value="6">招聘</option>
 						</select>
 					</div>
-					<div class="unit">
-						<label>菜单类型：</label>
-						<select name="type" id="type">
+					<div class="unit model1 model2 model3 model4 model5 model6">
+						<label class="model1 model2 model3 model4 model5 model6">菜单类型：</label>
+						<select name="type" id="type" class="model1 model2 model3 model4 model5 model6">
 							<option <eq name="vo['type']" value="0" >selected</eq> value="0">列表制</option>
 							<option <eq name="vo['type']" value="1" >selected</eq> value="1">引导栏目(不能发布内容,只作显示)</option>
 							<option <eq name="vo['type']" value="2" >selected</eq> value="2">外部链接</option>
 						</select>
 					</div>
+					<div class="unit model0" style="display:none">
+						<label class="model0">内容ID：</label>
+						<input class="model0" type="text" class="large bLeftRequire"  name="dwz.orgId.aiid" value="{$vo['type']}">
+						<a class="model0 btnLook" href="__GROUP__/ArticleInfo/index?sid=<empty name="vo[getModelPk(MODULE_NAME)]">{$_REQUEST['sid']}<else />{$vo['sid']}</empty>&returnRequire=1&smid=0" rel="{:MODULE_NAME}Select" mask="true" lookupGroup="orgId" >选择文章ID</a>
+					</div>
+
 					<div class="unit type2" style="display:none">
 						<label class="type2">外部链接：</label>
 						<input class="type2" type="text" name="link" value="{$vo['link']}">
@@ -127,11 +133,12 @@
 
 <script type="text/javascript">
 $("#type").change(function(){changeHref();});
+$("#model").change(function(){changeHref();$("[class^='type']").hide();});
 $(document).ready(function(){changeHref();});
 function changeHref(){
-	var type = $("#type").val();
-	$("[class^='type']").hide()
-	$(".type"+type).show();
+	var type = $("#type").val(), model = $("#model").val();
+	$("[class^='type']").hide();  $(".type"+type).show();
+	$("[class^='model']").hide(); $(".model"+model).show();
 }
 </script>
 

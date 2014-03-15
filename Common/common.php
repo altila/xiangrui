@@ -166,6 +166,9 @@ function getUrl( $type, $list = '' ) {
 	case 'ArticleCategory' :
 		$url = domain('www') . "/ArticleCategory/{$list[getModelPk("Base/{$type}")]}_1";
 		break;
+	case '0' :
+		$url = domain('www') . "/ArticleInfo/{$list['type']}";
+		break;
 	case '1' :
 		$url = domain('www') . "/ArticleCategory/{$list['smid']}_1";
 		break;

@@ -49,7 +49,7 @@
 						</form>
 					</div>
 
-					<if condition=" !empty($_REQUEST['smid']) ">
+					<if condition="  $_REQUEST['smid'] != null ">
 					<div class="panelBar">
 						<ul class="toolBar">
 							<li><a class="add" href="__URL__/add?sid={$_REQUEST['sid']}&smid={$_REQUEST['smid']}" target="dialog" max="true" mask="true"><span>新增</span></a></li>
@@ -75,7 +75,7 @@
 							</tr>
 						</thead>
 						<tbody>
-							<if condition=" !empty($_REQUEST['smid']) || $_REQUEST['returnRequire'] == 1 ">
+							<if condition=" $_REQUEST['smid'] != null || $_REQUEST['returnRequire'] == 1 ">
 							<volist id="vo" name="list">
 							<tr target="_id" rel="{$vo[getModelPk(MODULE_NAME)]}">
 								<eq name="_REQUEST['returnRequire']" value="1">
