@@ -72,6 +72,7 @@ class ACategoryAction extends ABaseAction {
 		if( $_REQUEST[getModelPk($modelName)] == $_REQUEST['parent_id'] ) $this->ajaxReturn( '', "请选正确选择父类!", 0 );
 		if( !empty($_POST['show_position']) ) $_POST['show_position'] = array_sum($_POST['show_position']);
 		$_POST['sids'] = ( !empty($_POST['sids']) ) ? implode(',',$_POST['sids']) : '';
+		if( $_POST['model'] == 0 && !empty($_POST['dwz_orgId_aiid']) ) $_POST['type'] = $_POST['dwz_orgId_aiid'];
 	}
 
 	/**
@@ -100,6 +101,7 @@ class ACategoryAction extends ABaseAction {
 		$_POST['crumb'] = ( !empty($crumb) ? "{$crumb}" : "" ) . "{$_POST[getModelPk($modelName)]}-";
 		if( !empty($_POST['show_position']) ) $_POST['show_position'] = array_sum($_POST['show_position']);
 		$_POST['sids'] = ( !empty($_POST['sids']) ) ? implode(',',$_POST['sids']) : '';
+		if( $_POST['model'] == 0 && !empty($_POST['dwz_orgId_aiid']) ) $_POST['type'] = $_POST['dwz_orgId_aiid'];
 	}
 
 }

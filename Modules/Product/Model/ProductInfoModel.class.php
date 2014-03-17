@@ -28,10 +28,11 @@ class ProductInfoModel extends HInfoBaseModel {
 	+----------------------------------------------------------
 	*/
 	public function getList( $condition = array(), $field = '', $order = '', $limit = '' ) {
-		$result = parent::getList( $condition, '*', $order, $limit );
+		$field = 'pgid,name,code,market_price,thumbnail';
+		$result = parent::getList( $condition, $field, $order, $limit );
 		if( $result['totalCount'] > 0 )
 			foreach( $result['data'] as $key=>$val ) {
-				$_val = $this->getInfo( array('sid'=>$val['sid'], 'pgid'=>$val['pgid']) );
+				$_val = $this->getInfo( array('sid'=>$val['sid'], 'pgid'=>$val['pgid']), $field );
 				$v = array_merge($val,$_val);
 				$result['data'][$key] = $v;
 			}

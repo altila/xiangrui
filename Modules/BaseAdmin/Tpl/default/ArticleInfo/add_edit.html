@@ -13,19 +13,18 @@
 				<label>文章名称：</label>
 				<input type="text" class="required"  name="name" value="{$vo['name']}">
 			</div>
-			<require file="Admin,BaseAppDevice/treeInputCkbox" />
 			<div class="unit">
 				<label>文章缩略图：</label>
 				<require file="Admin,Block/formUpImage" />
 			</div>
-			<div class="unit">
+			<!--<div class="unit">
 				<label>文章来源：</label>
 				<input type="text" style="width:400px"  name="source_url" value="{$vo['source_url']}">
 			</div>
 			<div class="unit">
 				<label>文章简述：</label>
 				<textarea name="description" rows="5" cols="57">{$vo['description']}</textarea>
-			</div>
+			</div>-->
 			<div class="unit">
 				<label>文章内容：</label>
 				<require file="Admin,Block/formEditor" />

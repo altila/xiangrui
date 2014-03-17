@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50136
 File Encoding         : 65001
 
-Date: 2014-03-14 22:12:46
+Date: 2014-03-15 23:02:56
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -4889,8 +4889,8 @@ CREATE TABLE `base_site_menu` (
   `code` varchar(100) NOT NULL DEFAULT '' COMMENT '菜单编码,可作唯一标示',
   `name` varchar(100) NOT NULL DEFAULT '' COMMENT '菜单名称',
   `crumb` varchar(100) NOT NULL DEFAULT '' COMMENT '面包屑，用横杠分割',
-  `model` tinyint(1) DEFAULT '1' COMMENT '菜单模型：1为文章，2为图片集，3为产品，4为博文，5为小说，6为招聘',
-  `type` tinyint(1) DEFAULT '0' COMMENT '菜单类型：0为列表制，1为引导栏目(不能发布内容,只作显示)，2为外部链接',
+  `model` tinyint(1) DEFAULT '1' COMMENT '菜单模型：0为单篇内容，1为文章，2为图片集，3为产品，4为博文，5为小说，6为招聘',
+  `type` tinyint(1) DEFAULT '0' COMMENT '单篇内容ID 或 菜单类型：0为列表制，1为引导栏目(不能发布内容,只作显示)，2为外部链接',
   `link` varchar(255) DEFAULT '' COMMENT '外部链接',
   `show_position` tinyint(3) DEFAULT '0' COMMENT '显示位置：1为顶部，2为中部，4为底部',
   `class` varchar(100) DEFAULT '' COMMENT '菜单样式',

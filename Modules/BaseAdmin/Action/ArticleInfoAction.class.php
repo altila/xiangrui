@@ -18,7 +18,7 @@ class ArticleInfoAction extends AArticleInfoAction {
 	+----------------------------------------------------------
 	*/
 	public function _before_add() {
-		if( empty($_REQUEST['smid']) ) $this->ajaxReturn( '', "请选择!", 0 );
+		if( $_REQUEST['smid'] == null ) $this->ajaxReturn( '', "请选择!", 0 );
 	}
 
 	/**
@@ -27,7 +27,7 @@ class ArticleInfoAction extends AArticleInfoAction {
 	+----------------------------------------------------------
 	*/
 	public function _before_sort() {
-		if( empty($_REQUEST['smid']) ) $this->ajaxReturn( '', "请选择!", 0 );
+		if( $_REQUEST['smid'] == null ) $this->ajaxReturn( '', "请选择!", 0 );
 	}
 
 }

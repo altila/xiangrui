@@ -25,32 +25,46 @@
 						<label>商品主图：</label>
 						<require file="Admin,Block/formUpImage" />
 					</div>
-					<require file="Admin,BaseAppDevice/treeInputCkbox" />
-					<div class="unit">
-						<label>渠道ID：</label>
-						<require file="ProductAdmin,ProductChannel/treeInputCkbox" />
-					</div>
-					<div class="unit">
+					<!--<div class="unit">
 						<label>商品编码：</label>
 						<input type="text" class="required alphanumeric"  name="code" value="{$vo['code']}" <notempty name="vo[getModelPk(MODULE_NAME)]">disabled</notempty> >
-					</div>
+					</div-->
 					<div class="unit">
 						<label>商品名称：</label>
 						<input type="text" class="required"  name="name" value="{$vo['name']}">
 					</div>
 					<div class="unit">
 						<label>商品成本价：</label>
-						<input type="text" name="cost_price" value="{$vo['cost_price']}" <notempty name="vo[getModelPk(MODULE_NAME)]">disabled</notempty>>
+						<input type="text" name="cost_price" value="{$vo['cost_price']}">
 					</div>
 					<div class="unit">
-						<label>商品市场价：</label>
-						<input type="text" name="market_price" value="{$vo['market_price']}" <notempty name="vo[getModelPk(MODULE_NAME)]">disabled</notempty>>
+						<label>净重：</label>
+						<input type="text" name="weight" value="{$vo['weight']}">
 					</div>
 					<div class="unit">
-						<label>商品保护价：</label>
-						<input type="text" name="protect_price" value="{$vo['protect_price']}">
+						<label>储藏方式：</label>
+						<input type="text" name="storage" value="{$vo['storage']}">
 					</div>
-
+					<div class="unit">
+						<label>冷藏保存天数：</label>
+						<input type="text" name="refrigeration_datas" value="{$vo['refrigeration_datas']}">
+					</div>
+					<div class="unit">
+						<label>常温保存天数：</label>
+						<input type="text" name="homoeothermy_datas" value="{$vo['homoeothermy_datas']}">
+					</div>
+					<div class="unit">
+						<label>出品商：</label>
+						<input type="text" name="publisher" value="{$vo['publisher']}">
+					</div>
+					<div class="unit">
+						<label>生产商：</label>
+						<input type="text" name="manufacturers" value="{$vo['manufacturers']}">
+					</div>
+					<div class="unit">
+						<label>生产地：</label>
+						<input type="text" name="production" value="{$vo['production']}">
+					</div>
 				</div>
 			</div>
 			<div>
@@ -64,7 +78,6 @@
 						<textarea class="huge bLeft" name="descList[{$voList['pdcid']}][content]" ROWS="5" COLS="57">{$descContent[$voList['pdcid']]['content']}</textarea>
 					</div>
 					</volist>
-
 				</div>
 			</div>
 		</div>

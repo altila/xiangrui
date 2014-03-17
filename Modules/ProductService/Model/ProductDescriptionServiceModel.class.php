@@ -31,11 +31,11 @@ class ProductDescriptionServiceModel extends SBaseModel {
 	+----------------------------------------------------------
 	*/
 	public function getDescriptionByPgid( $condition = array(), $field = '', $order = '', $limit = '' ) {
-		if( empty($condition['sid']) || empty($condition['pgid']) ) return '';
+		if( empty($condition['pgid']) ) return '';
 		$sql = "SELECT pdc.`name`,pdc.`code`,pd.content
 			FROM product_description AS pd
 			LEFT JOIN product_description_category AS pdc ON pdc.pdcid = pd.pdcid
-			WHERE pd.pgid = 1 AND pdc.status = 1
+			WHERE pd.pgid = {$condition['pgid']} AND pdc.status = 1
 			ORDER BY pdc.sort";
 		$_result = $this->getCacheData( '', $sql );
 		foreach( $_result as $key=>$val )

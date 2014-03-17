@@ -107,7 +107,7 @@ class ProductGoodsAction extends ABaseAction {
 	*/
 	public function _filterInsertCheck() {
 		$map['sid'] = $_REQUEST['sid'];
-		$map['code'] = $_REQUEST['code'];
+		//$map['code'] = $_REQUEST['code'];
 		return $map;
 	}
 
@@ -118,7 +118,7 @@ class ProductGoodsAction extends ABaseAction {
 	*/
 	public function _filterUpdateCheck() {
 		$map['sid'] = $_REQUEST['sid'];
-		$map['code'] = $_REQUEST['code'];
+		//$map['code'] = $_REQUEST['code'];
 		return $map;
 	}
 
