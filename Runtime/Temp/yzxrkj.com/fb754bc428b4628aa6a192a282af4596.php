@@ -1,0 +1,3 @@
+<?php
+//000000000900a:1:{s:5:"zh-cn";a:22:{s:3:"sid";s:1:"1";s:6:"blcode";s:5:"zh-cn";s:6:"domain";s:6:"yzxrkj";s:4:"name";s:11:"xiangrui网";s:8:"keywords";s:8:"xiangrui";s:11:"description";s:8:"xiangrui";s:8:"template";s:7:"default";s:9:"record_no";s:0:"";s:11:"bottom_info";s:0:"";s:8:"reg_info";s:23:"1,2,3,4,5,6,7,8,9,10,11";s:11:"is_ajax_reg";s:1:"0";s:13:"is_ajax_login";s:1:"0";s:10:"login_type";s:3:"1,2";s:16:"joint_login_show";s:3:"1,2";s:16:"joint_login_type";s:14:"qq,sina,alipay";s:16:"enable_interface";s:11:"BaseService";s:29:"enable_interface_alone_domain";s:1:"1";s:17:"enable_two_domain";s:0:"";s:4:"sort";s:1:"1";s:6:"status";s:1:"1";s:8:"add_time";s:19:"2012-12-11 13:58:09";s:11:"update_time";s:19:"2014-03-14 20:55:15";}}
+?>

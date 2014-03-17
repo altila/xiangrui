@@ -47,7 +47,7 @@ return array(
 	/* 模板配置 */
 	'DEFAULT_THEME'         => 'default',   // 默认模板主题名称
 	'TMPL_DETECT_THEME'     => true,        // 自动侦测模板主题
-	'THEME_LIST'            => 'default,luckyli', // 模板主题名称
+	'THEME_LIST'            => 'default,' . substr( strchr($_SERVER['HTTP_HOST'],'.'), 1, strpos(strchr($_SERVER['HTTP_HOST'],'.'),'.',1)-1 ), // 模板主题名称
 	'TAGLIB_BUILD_IN'       => 'cx,model',  // 内置标签库名称(标签使用不必指定标签库名称),以逗号分隔 注意解析顺序
 	//'TAGLIB_PRE_LOAD'       =>  'model',   // 需要额外加载的标签库(须指定标签库名称)，多个以逗号分隔
 

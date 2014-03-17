@@ -1,0 +1,3 @@
+<?php
+//000000000900a:6:{s:10:"statusCode";i:200;s:6:"status";i:1;s:4:"info";s:12:"获取成功";s:7:"message";s:12:"获取成功";s:4:"data";a:6:{i:0;a:4:{s:4:"aiid";s:1:"3";s:4:"smid";s:1:"1";s:4:"name";s:12:"公司足迹";s:5:"class";s:0:"";}i:1;a:4:{s:4:"aiid";s:2:"25";s:4:"smid";s:1:"1";s:4:"name";s:12:"公司理念";s:5:"class";s:0:"";}i:2;a:4:{s:4:"aiid";s:2:"26";s:4:"smid";s:1:"1";s:4:"name";s:12:"公司荣誉";s:5:"class";s:0:"";}i:3;a:4:{s:4:"aiid";s:2:"27";s:4:"smid";s:1:"1";s:4:"name";s:12:"领导关怀";s:5:"class";s:0:"";}i:4;a:4:{s:4:"aiid";s:2:"28";s:4:"smid";s:1:"1";s:4:"name";s:12:"社会责任";s:5:"class";s:0:"";}i:5;a:3:{s:4:"aiid";s:1:"1";s:4:"smid";s:1:"1";s:4:"name";s:12:"公司介绍";}}s:8:"navTabId";s:0:"";}
+?>

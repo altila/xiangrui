@@ -1,0 +1,35 @@
+{//头部}
+<require file="Base,Public/global_header"/>
+
+<div class="container">
+	<require file="Base,Plate/index" />
+</div>
+
+{//底部}
+<require file="Base,Public/global_footer"/>
+<php>echo get_static_file(array('slide.js'),'public');</php>
+<script>
+	$(function(){
+		// banner图轮播调用
+		$(".banner").slide({
+			times:  5000,
+			height: 514,
+			customize: true
+		});
+
+		// 显示遮罩层
+		$(".show_mask").each(function() {
+			$(this).hover(function() {
+				$(this).find(".mask_text").stop().animate({
+					top: 0
+				},300);
+			},function() {
+				$(this).find(".mask_text").stop().animate({
+					top: "100%"
+				},300);
+			});
+		})
+	});
+</script>
+
+
