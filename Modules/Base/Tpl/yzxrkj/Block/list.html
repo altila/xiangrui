@@ -1,0 +1,123 @@
+<?php
+$dateType = !empty($dateType) ? $dateType : 'Y-m-d H:i';
+$thumbWidth = !empty($thumbWidth) ? $thumbWidth : 65;
+$imgWidth = !empty($imgWidth) ? $imgWidth : 195;
+$listType = !empty($listType) ? $listType : 3;
+?>
+
+<if condition=" GROUP_NAME == 'Base' &&  MODULE_NAME == 'Index'">
+<h2 class="box_title">
+	<div class="gradient_border">
+		<div class="gradient_border_inner">
+			<empty name="info['name']">{$vo['name']}<else/>{$info['name']}</empty>
+		</div>
+	</div>
+</h2>
+<div class="gradient_border">
+	<div class="gradient_border_inner">
+		<div class="box_sub_title">
+			最新动态
+		</div>
+	</div>
+</div>
+</if>
+
+<div class="box_content">
+<volist name="list[data]" id="vo">
+
+<div class="media">
+	<div class="gradient_border">
+		<div class="gradient_border_inner">
+			{//缩略图 开始}
+			<if condition=" !empty($vo['thumbnail']) && ($listType&32) == 32 ">
+			<a target="_blank" href="{:getUrl( $modelName."_info", $vo )}" title="{$vo['name']}">
+				<img width="{$thumbWidth}" original="{$vo['thumbnail']}" src="{:C('DEFAULT_IMG')}" alt="{$vo['name']}">
+			</a>
+			</if>
+			{//缩略图 结束}
+
+			<div class="media-body">
+				{//标题 开始}
+				<if condition=" ($listType&1) == 1 ">
+				<h4 class="media-heading">
+					<a target="_blank" href="{:getUrl( $modelName."_info", $vo )}" title="{$vo['name']}">{$vo['name']}</a>
+				</h4>
+
+				<div class="media-more">
+					<a target="_blank" href="{:getUrl( $modelName."_info", $vo )}" class="link-more" title="查看更多"></a>
+				</div>
+
+				</if>
+				{//标题 结束}
+
+				{//添加时间 开始}
+				<if condition=" ($listType&2) == 2 ">
+				<div class="media-time">{$vo['add_time']|strtotime|date=$dateType,###}</div>
+				</if>
+				{//添加时间 结束}
+				
+				{//简介 开始}
+				<if condition=" ($listType&64) == 64 ">
+				<div class="media-abstract">
+					{$vo['description']}
+				</div>
+				</if>
+				{//简介 结束}
+
+				{//图片 开始}
+				<if condition=" !empty($vo['img_url']) && ($listType&128) == 128 ">
+				<?php $imgArr = explode(',',$vo['img_url']);?>
+				<div class="imgList">
+					<a target="_blank" href="{:getUrl( $modelName."_info", $vo )}" title="{$vo['name']}">
+						<volist name="imgArr" id="img">
+						<if condition=" !empty($img) ">
+						<img width="{$imgWidth}" original="{$img}" src="{:C('DEFAULT_IMG')}" alt="{$vo['name']}">
+						</if>
+						</volist>
+					</a>
+				</div>
+				</if>
+				{//图片 结束}
+
+				{//标签 开始}
+				<if condition=" !empty($vo['tags_name']) && ($listType&256) == 256 ">
+				<?php $tagArr = explode(',',$vo['tags_name']);?>
+				<div class="tags">
+					<volist name="tagArr" id="tag">
+					<if condition=" !empty($tag) ">
+					<a target="_blank" class="tag" href="{:getUrl( $tagName, $tag )}" title="{$tag}"><span class="label label-info">{$tag}</span></a>
+					</if>
+					</volist>
+				</div>
+				</if>
+				{//标签 结束}
+
+				{//用户名 开始}
+				<if condition=" ($listType&4) == 4 ">
+				<span class="user">{$vo['uid']|findById="UserAdmin/UserBase",###,'user_id'}</span>
+				</if>
+				{//用户名 结束}
+
+
+			</div>
+		</div>
+	</div>
+</div>
+</volist>
+
+{//更多 开始}
+<if condition=" ($listType&16) == 16 ">
+<div class="text-center list_more">
+	<a target="_blank" href="{:getUrl( $modelName, $list )}" class="icon_arrow_right" title="查看更多"></a>
+</div>
+</if>
+{//更多 结束}
+
+</div>
+
+{//分页 开始}
+<if condition=" ($listType&8) == 8 ">
+<div class="bottom-pager">{$list['page']}</div>
+</if>
+{//分页 结束}
+

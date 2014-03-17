@@ -77,6 +77,11 @@
 .offset1 {
   margin-left: 70px;
 }
+.media {
+  width: 478px;
+  float: left;
+  margin: 0 0 0 20px;
+}
 .media .media-body {
   padding: 20px 0 30px;
 }
@@ -406,6 +411,14 @@ td {
   text-align: center;
   display: inline-block;
   background-image: url(../images/bg_year.jpg);
+}
+.icon_plus {
+  width: 11px;
+  height: 12px;
+  line-height: 25px;
+  margin: 0 5px;
+  display: inline-block;
+  background-image: url(../images/icon/icon_plus.png);
 }
 .green {
   color: #22ac38;
@@ -763,7 +776,7 @@ a.btn_support:hover {
   text-align: right;
   margin: 60px 0 40px;
 }
-.line_dot span {
+.line_dot .line_dot_inner {
   background: url(../images/line_dot.png) right top no-repeat;
   height: 9px;
   display: inline-block;

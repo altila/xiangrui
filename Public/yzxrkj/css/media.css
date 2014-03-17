@@ -1,3 +1,8 @@
+.media {
+  width: 478px;
+  float: left;
+  margin: 0 0 0 20px;
+}
 .media .media-body {
   padding: 20px 0 30px;
 }

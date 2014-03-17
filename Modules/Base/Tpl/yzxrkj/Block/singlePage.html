@@ -1,0 +1,13 @@
+<if condition=" ($vo['list_opt']&1) == 1 ">
+<h2 class="box_title">
+	<div class="gradient_border">
+		<div class="gradient_border_inner"><empty name="info['name']">{$vo['name']}<else/>{$info['name']}</empty></div>
+	</div>
+</h2>
+</if>
+<if condition=" ($vo['list_opt']&64) == 64 ">
+<p>{$vo['data']['description']}</p>
+</if>
+<if condition=" ($vo['list_opt']&512) == 512 ">
+{$vo['data']['content']|htmlspecialchars_decode=ENT_QUOTES}
+</if>

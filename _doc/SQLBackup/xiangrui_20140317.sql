@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50508
 File Encoding         : 65001
 
-Date: 2014-03-17 19:16:56
+Date: 2014-03-18 01:07:47
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -3895,7 +3895,7 @@ CREATE TABLE `admin_site_access` (
   PRIMARY KEY (`id`),
   KEY `rid` (`rid`) USING BTREE,
   KEY `nid` (`nid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=181 DEFAULT CHARSET=utf8 COMMENT='访问权限管理';
+) ENGINE=InnoDB AUTO_INCREMENT=182 DEFAULT CHARSET=utf8 COMMENT='访问权限管理';
 
 -- ----------------------------
 -- Records of admin_site_access
@@ -3915,7 +3915,6 @@ INSERT INTO `admin_site_access` VALUES ('12', '1', '1', '8', '1', '2013-03-08 15
 INSERT INTO `admin_site_access` VALUES ('13', '1', '1', '30', '1', '2013-03-08 15:28:45', '2013-03-08 15:28:45');
 INSERT INTO `admin_site_access` VALUES ('14', '1', '1', '31', '1', '2013-03-08 15:28:45', '2013-03-08 15:28:45');
 INSERT INTO `admin_site_access` VALUES ('15', '1', '1', '33', '1', '2013-03-08 15:28:45', '2013-03-08 15:28:45');
-INSERT INTO `admin_site_access` VALUES ('16', '1', '1', '2', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('17', '1', '1', '56', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('18', '1', '1', '85', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('19', '1', '1', '86', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
@@ -3932,21 +3931,6 @@ INSERT INTO `admin_site_access` VALUES ('29', '1', '1', '96', '1', '2014-03-12 1
 INSERT INTO `admin_site_access` VALUES ('30', '1', '1', '97', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('31', '1', '1', '83', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('32', '1', '1', '84', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('33', '1', '1', '57', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('34', '1', '1', '58', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('35', '1', '1', '98', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('36', '1', '1', '99', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('37', '1', '1', '100', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('38', '1', '1', '101', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('39', '1', '1', '102', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('40', '1', '1', '103', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('41', '1', '1', '104', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('42', '1', '1', '105', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('43', '1', '1', '106', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('44', '1', '1', '107', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('45', '1', '1', '108', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('46', '1', '1', '110', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('47', '1', '1', '109', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('48', '1', '1', '59', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('49', '1', '1', '111', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('50', '1', '1', '112', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
@@ -4027,20 +4011,6 @@ INSERT INTO `admin_site_access` VALUES ('124', '1', '1', '173', '1', '2014-03-12
 INSERT INTO `admin_site_access` VALUES ('125', '1', '1', '172', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('126', '1', '1', '171', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('127', '1', '1', '69', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('128', '1', '1', '52', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('129', '1', '1', '193', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('130', '1', '1', '192', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('131', '1', '1', '191', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('132', '1', '1', '190', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('133', '1', '1', '189', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('134', '1', '1', '188', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('135', '1', '1', '187', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('136', '1', '1', '186', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('137', '1', '1', '185', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('138', '1', '1', '184', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('139', '1', '1', '183', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('140', '1', '1', '182', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
-INSERT INTO `admin_site_access` VALUES ('141', '1', '1', '181', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('142', '1', '1', '51', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('143', '1', '1', '205', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
 INSERT INTO `admin_site_access` VALUES ('144', '1', '1', '204', '1', '2014-03-12 16:12:41', '2014-03-12 16:12:41');
@@ -4080,6 +4050,7 @@ INSERT INTO `admin_site_access` VALUES ('177', '1', '1', '328', '1', '2014-03-12
 INSERT INTO `admin_site_access` VALUES ('178', '1', '1', '330', '1', '2014-03-12 19:00:35', '2014-03-12 19:00:35');
 INSERT INTO `admin_site_access` VALUES ('179', '1', '1', '331', '1', '2014-03-12 19:39:57', '2014-03-12 19:39:57');
 INSERT INTO `admin_site_access` VALUES ('180', '1', '1', '332', '1', '2014-03-12 19:39:57', '2014-03-12 19:39:57');
+INSERT INTO `admin_site_access` VALUES ('181', '1', '1', '62', '1', '2014-03-18 00:57:29', '2014-03-18 00:57:29');
 
 -- ----------------------------
 -- Table structure for `admin_site_config`
@@ -4813,7 +4784,7 @@ CREATE TABLE `base_article_info` (
   KEY `sid` (`sid`) USING BTREE,
   KEY `uid` (`uid`) USING BTREE,
   KEY `smid` (`smid`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8 COMMENT='文章信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8 COMMENT='文章信息表';
 
 -- ----------------------------
 -- Records of base_article_info
@@ -4834,7 +4805,7 @@ INSERT INTO `base_article_info` VALUES ('13', '1', '2', '10', '1', '工艺流程
 INSERT INTO `base_article_info` VALUES ('14', '1', '2', '10', '1', '技术特点', '', '', '技术特点', '&lt;p&gt;技术特点&lt;/p&gt;', '', '', '', '3', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-21 17:59:45', '2014-03-14 21:46:32');
 INSERT INTO `base_article_info` VALUES ('15', '1', '2', '10', '1', '科研成果', '', '', '科研成果', '&lt;p&gt;科研成果&lt;/p&gt;', '', '', '', '2', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-21 18:00:28', '2014-03-14 21:46:13');
 INSERT INTO `base_article_info` VALUES ('16', '1', '2', '10', '1', '科研团队', '', '', '科研团队', '&lt;p&gt;科研团队&lt;/p&gt;', 'http://news.xinhuanet.com/fortune/2013-11/21/125739333_11n.jpg', '', '', '1', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-21 18:01:16', '2014-03-14 21:45:12');
-INSERT INTO `base_article_info` VALUES ('17', '1', '2', '35', '1', '公司动态1', '', '', '公司动态1', '&lt;p&gt;公司动态1&lt;/p&gt;', '', '', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-21 18:01:54', '2014-03-14 22:01:32');
+INSERT INTO `base_article_info` VALUES ('17', '1', '1', '35', '1', '省委书记徐守盛来厂考察', '', '', '省委书记徐守盛来厂考察', '&lt;p&gt;省委书记徐守盛来厂考察&lt;/p&gt;', '', '', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-21 18:01:54', '2014-03-17 23:04:24');
 INSERT INTO `base_article_info` VALUES ('18', '1', '2', '21', '1', '行业动态1', '', '', '行业动态1', '&lt;p&gt;行业动态1&lt;/p&gt;', '', '', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-21 18:02:28', '2014-03-14 22:02:37');
 INSERT INTO `base_article_info` VALUES ('19', '1', '2', '20', '1', '集体培训', '', '', '集体培训', '&lt;p&gt;集体培训&lt;/p&gt;', '', '', '', '5', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-21 18:03:01', '2014-03-14 22:00:08');
 INSERT INTO `base_article_info` VALUES ('20', '1', '2', '9', '1', '科研合作', '', '', '科研合作', '&lt;p&gt;科研合作&lt;/p&gt;', '', '', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-21 18:03:58', '2014-03-14 21:55:25');
@@ -4846,8 +4817,14 @@ INSERT INTO `base_article_info` VALUES ('25', '1', '1', '1', '1', '公司理念'
 INSERT INTO `base_article_info` VALUES ('26', '1', '1', '1', '1', '公司荣誉', '', '', '公司荣誉', '&lt;p&gt;公司荣誉&lt;/p&gt;', '', '', '', '5', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-14 15:13:29', '2014-03-14 15:13:29');
 INSERT INTO `base_article_info` VALUES ('27', '1', '1', '1', '1', '领导关怀', '', '', '领导关怀', '&lt;p&gt;领导关怀&lt;/p&gt;', '', '', '', '6', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-14 15:13:44', '2014-03-14 15:13:44');
 INSERT INTO `base_article_info` VALUES ('28', '1', '1', '1', '1', '社会责任', '', '', '社会责任', '&lt;p&gt;社会责任&lt;/p&gt;', '', '', '', '7', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-14 15:14:29', '2014-03-14 15:14:29');
-INSERT INTO `base_article_info` VALUES ('29', '1', '1', '0', '1', '现代原生态', '', '', '', '', '', '', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-17 18:05:36', '2014-03-17 18:59:44');
-INSERT INTO `base_article_info` VALUES ('30', '1', '1', '0', '1', '招商', '', '', '', '', '', '', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-17 18:10:40', '2014-03-17 18:10:40');
+INSERT INTO `base_article_info` VALUES ('29', '1', '1', '0', '1', '现代原生态', '', '', '现代\n							原生态\n							原健康&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\n							祥瑞生产基地四面环山，地处全国环境最美县城\n					...', '&lt;div class=&quot;gradient_border&quot;&gt;&lt;div class=&quot;div gradient_border_inner&quot;&gt;&lt;div class=&quot;box_sub_title&quot;&gt;现代&lt;span class=&quot;icon_plus&quot;&gt;&lt;/span&gt;\n							原生态&lt;span class=&quot;icon_plus&quot;&gt;&lt;/span&gt;\n							原健康&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;box_content show_mask&quot;&gt;&lt;img src=&quot;__CSS_IMG__/pic/p_1.jpg&quot; alt=&quot;&quot; class=&quot;box_cover&quot;/&gt;&lt;a href=&quot;&quot; class=&quot;icon_arrow_up&quot;&gt;&lt;/a&gt;&lt;div class=&quot;mask_text&quot;&gt;&lt;div class=&quot;mask_inner&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;\n							祥瑞生产基地四面环山，地处全国环境最美县城&lt;br/&gt;\n							确保产品百分百绿色安全&lt;br/&gt;&lt;br/&gt;\n							\n							先进的生产技术，创造稳定的产品质量&lt;br/&gt;\n							雄厚的科研力量，保障人们的健康需求&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;', '/Public/yzxrkj/images/pic/p_1.jpg', '__CSS_IMG__/pic/p_1.jpg,', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-17 18:05:36', '2014-03-17 22:49:59');
+INSERT INTO `base_article_info` VALUES ('30', '1', '1', '0', '1', '招商', '', '', '\n    \n        \n            长沙\n							上海\n							\n							全面启动\n        \n    \n\n\n    \n    \n        \n    \n', '&lt;div class=&quot;gradient_border&quot;&gt;\n    &lt;div class=&quot;div gradient_border_inner&quot;&gt;\n        &lt;div class=&quot;box_sub_title&quot;&gt;\n            长沙&lt;span class=&quot;icon_plus&quot;&gt;&lt;/span&gt;\n							上海\n							\n							全面启动\n        &lt;/div&gt;\n    &lt;/div&gt;\n&lt;/div&gt;\n&lt;div class=&quot;box_content show_mask&quot;&gt;\n    &lt;img src=&quot;__CSS_IMG__/pic/p_2.jpg&quot; alt=&quot;&quot; class=&quot;box_cover&quot;/&gt;&lt;a href=&quot;&quot; class=&quot;icon_arrow_up&quot;&gt;&lt;/a&gt;\n    &lt;div class=&quot;mask_text&quot;&gt;\n        &lt;div class=&quot;mask_inner&quot;&gt;&lt;/div&gt;\n    &lt;/div&gt;\n&lt;/div&gt;', '__CSS_IMG__/pic/p_2.jpg', '__CSS_IMG__/pic/p_2.jpg,', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-17 18:10:40', '2014-03-17 22:47:17');
+INSERT INTO `base_article_info` VALUES ('31', '1', '1', '0', '1', '产品', '', '', '\n							生鲜菌菇\n							食用菌酱油\n							调味品\n							有机肥料\n							保健品\n							休闲食品\n							江永特产', '&lt;div class=&quot;gradient_border&quot;&gt;&lt;div class=&quot;gradient_border_inner&quot;&gt;&lt;div class=&quot;box_sub_title&quot;&gt;\n							生鲜菌菇&lt;span class=&quot;icon_plus&quot;&gt;&lt;/span&gt;\n							食用菌酱油&lt;span class=&quot;icon_plus&quot;&gt;&lt;/span&gt;\n							调味品&lt;span class=&quot;icon_plus&quot;&gt;&lt;/span&gt;\n							有机肥料&lt;span class=&quot;icon_plus&quot;&gt;&lt;/span&gt;\n							保健品&lt;span class=&quot;icon_plus&quot;&gt;&lt;/span&gt;\n							休闲食品&lt;span class=&quot;icon_plus&quot;&gt;&lt;/span&gt;\n							江永特产&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;box_content show_mask&quot;&gt;&lt;img src=&quot;__CSS_IMG__/pic/p_3.jpg&quot; alt=&quot;&quot; class=&quot;box_cover&quot;/&gt;&lt;a href=&quot;&quot; class=&quot;icon_arrow_up&quot;&gt;&lt;/a&gt;&lt;div class=&quot;mask_text&quot;&gt;&lt;div class=&quot;mask_inner&quot;&gt;&lt;img src=&quot;__CSS_IMG__/pic/p_text.png&quot; alt=&quot;&quot;/&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;', '__CSS_IMG__/pic/p_3.jpg', '__CSS_IMG__/pic/p_3.jpg,__CSS_IMG__/pic/p_text.png,', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-17 22:50:56', '2014-03-17 22:50:56');
+INSERT INTO `base_article_info` VALUES ('32', '1', '1', '35', '1', '副省长徐明华对公司菇的长势看好', '', '', '副省长徐明华对公司菇的长势看好', '&lt;p&gt;副省长徐明华对公司菇的长势看好&lt;/p&gt;', '', '', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-17 22:55:28', '2014-03-17 23:04:36');
+INSERT INTO `base_article_info` VALUES ('33', '1', '1', '35', '1', '市委常委、市委秘书长朱映长来公司考察', '', '', '市委常委、市委秘书长朱映长来公司考察', '&lt;p&gt;市委常委、市委秘书长朱映长来公司考察&lt;/p&gt;', '', '', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-17 23:04:46', '2014-03-17 23:04:46');
+INSERT INTO `base_article_info` VALUES ('34', '1', '1', '35', '1', '省政协主席胡彪来厂考察', '', '', '省政协主席胡彪来厂考察', '&lt;p&gt;省政协主席胡彪来厂考察&lt;/p&gt;', '', '', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-17 23:05:14', '2014-03-17 23:05:14');
+INSERT INTO `base_article_info` VALUES ('35', '1', '1', '35', '1', '祥瑞公司2014年工作交流会在湖南农大', '', '', '祥瑞公司2014年工作交流会在湖南农大', '&lt;p&gt;祥瑞公司2014年工作交流会在湖南农大&lt;/p&gt;', '', '', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-17 23:05:22', '2014-03-17 23:05:22');
+INSERT INTO `base_article_info` VALUES ('36', '1', '1', '0', '1', '首页商品列表', '', '', '\n    \n\n\n    \n        \n            \n        \n        \n            金针菇 300g\n        \n    \n    \n       ...', '&lt;div class=&quot;line_dot&quot;&gt;\n    &lt;div class=&quot;line_dot_inner&quot;&gt;&lt;/div&gt;\n&lt;/div&gt;\n&lt;ul class=&quot;goods_list list-paddingleft-2&quot;&gt;\n    &lt;li&gt;\n        &lt;p&gt;\n            &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;__CSS_IMG__/goods/g_01.jpg&quot; alt=&quot;图片名称&quot; width=&quot;156&quot; height=&quot;150&quot;/&gt;&lt;/a&gt;\n        &lt;/p&gt;\n        &lt;h4&gt;\n            &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;金针菇 300g&lt;/a&gt;\n        &lt;/h4&gt;\n    &lt;/li&gt;\n    &lt;li&gt;\n        &lt;p&gt;\n            &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;__CSS_IMG__/goods/g_02.jpg&quot; alt=&quot;图片名称&quot; width=&quot;156&quot; height=&quot;150&quot;/&gt;&lt;/a&gt;\n        &lt;/p&gt;\n        &lt;h4&gt;\n            &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;金针菇 300g&lt;/a&gt;\n        &lt;/h4&gt;\n    &lt;/li&gt;\n    &lt;li&gt;\n        &lt;p&gt;\n            &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;__CSS_IMG__/goods/g_03.jpg&quot; alt=&quot;图片名称&quot; width=&quot;156&quot; height=&quot;150&quot;/&gt;&lt;/a&gt;\n        &lt;/p&gt;\n        &lt;h4&gt;\n            &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;金针菇 300g&lt;/a&gt;\n        &lt;/h4&gt;\n    &lt;/li&gt;\n    &lt;li&gt;\n        &lt;p&gt;\n            &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;__CSS_IMG__/goods/g_04.jpg&quot; alt=&quot;图片名称&quot; width=&quot;156&quot; height=&quot;150&quot;/&gt;&lt;/a&gt;\n        &lt;/p&gt;\n        &lt;h4&gt;\n            &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;金针菇 300g&lt;/a&gt;\n        &lt;/h4&gt;\n    &lt;/li&gt;\n    &lt;li&gt;\n        &lt;p&gt;\n            &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;__CSS_IMG__/goods/g_05.jpg&quot; alt=&quot;图片名称&quot; width=&quot;156&quot; height=&quot;150&quot;/&gt;&lt;/a&gt;\n        &lt;/p&gt;\n        &lt;h4&gt;\n            &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;金针菇 300g&lt;/a&gt;\n        &lt;/h4&gt;\n    &lt;/li&gt;\n    &lt;li&gt;\n        &lt;p&gt;\n            &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;&lt;img src=&quot;__CSS_IMG__/goods/g_06.jpg&quot; alt=&quot;图片名称&quot; width=&quot;156&quot; height=&quot;150&quot;/&gt;&lt;/a&gt;\n        &lt;/p&gt;\n        &lt;h4&gt;\n            &lt;a href=&quot;&quot; target=&quot;_blank&quot;&gt;金针菇 300g&lt;/a&gt;\n        &lt;/h4&gt;\n    &lt;/li&gt;\n&lt;/ul&gt;', '__CSS_IMG__/goods/g_01.jpg', '__CSS_IMG__/goods/g_01.jpg,__CSS_IMG__/goods/g_02.jpg,__CSS_IMG__/goods/g_03.jpg,__CSS_IMG__/goods/g_04.jpg,__CSS_IMG__/goods/g_05.jpg,__CSS_IMG__/goods/g_06.jpg,', '', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-18 00:41:38', '2014-03-18 00:41:38');
 
 -- ----------------------------
 -- Table structure for `base_job_info`
@@ -4922,7 +4899,7 @@ INSERT INTO `base_site_menu` VALUES ('4', '1', '2', 'ManageFinances', '金融理
 INSERT INTO `base_site_menu` VALUES ('5', '1', '3', 'Web', 'Web前端', '2-3-5-', '4', '1', '', '0', '', 'index', '0', '0', '0', '1', '2', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-03-21 14:26:44', '2013-04-09 14:21:47');
 INSERT INTO `base_site_menu` VALUES ('6', '1', '3', 'Language', '编程语言', '2-3-6-', '4', '1', '', '0', '', 'index', '0', '0', '0', '1', '4', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-03-21 14:27:49', '2013-04-09 14:23:47');
 INSERT INTO `base_site_menu` VALUES ('7', '1', '3', 'Database', '数据库', '2-3-7-', '4', '1', '', '2', '', 'index', '0', '0', '0', '1', '5', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-03-21 14:28:14', '2013-04-09 14:23:27');
-INSERT INTO `base_site_menu` VALUES ('8', '1', '0', 'Project', '新闻中心', '8-', '1', '1', '', '6', '', 'index', '0', '0', '0', '1', '6', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-03-21 14:30:36', '2014-03-14 21:15:15');
+INSERT INTO `base_site_menu` VALUES ('8', '1', '0', 'Project', '新闻中心', '8-', '1', '1', '', '2', '', 'index', '0', '0', '0', '1', '6', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-03-21 14:30:36', '2014-03-17 22:53:58');
 INSERT INTO `base_site_menu` VALUES ('9', '1', '0', 'EnterpriseSite', '经销商在线', '9-', '1', '0', '', '6', '', 'index', '0', '0', '0', '1', '5', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-03-21 14:31:14', '2014-03-14 21:14:53');
 INSERT INTO `base_site_menu` VALUES ('10', '1', '0', 'LargeSite', '科研中心', '10-', '1', '0', '', '2', '', 'index', '0', '0', '0', '1', '4', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-03-21 14:32:27', '2014-03-14 21:14:22');
 INSERT INTO `base_site_menu` VALUES ('11', '2', '0', 'AboutUs', 'About Us', '11-', '1', '0', '', '2', '', 'index', '0', '0', '0', '1', '1', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-03-21 15:39:38', '2013-03-21 15:39:38');
@@ -4933,7 +4910,7 @@ INSERT INTO `base_site_menu` VALUES ('15', '1', '12', 'Downlight', '有机料', 
 INSERT INTO `base_site_menu` VALUES ('16', '1', '12', 'ChemicalProducts', '食用菌酱油', '12-16-', '3', '1', '', '6', '', 'index', '0', '0', '0', '1', '2', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-04-03 16:51:02', '2014-03-14 21:18:54');
 INSERT INTO `base_site_menu` VALUES ('17', '1', '12', 'FadingAgent', '保健品', '12-17-', '3', '0', '', '6', '', 'index', '0', '0', '0', '1', '5', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-04-03 16:52:04', '2014-03-14 21:20:10');
 INSERT INTO `base_site_menu` VALUES ('18', '1', '12', 'BasicComputer', '食用菌休闲食品', '12-18-', '3', '1', '', '6', '', 'index', '0', '0', '0', '1', '6', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-04-09 14:19:08', '2014-03-14 21:21:21');
-INSERT INTO `base_site_menu` VALUES ('19', '1', '0', 'DataStructure', '联系我们', '19-', '1', '0', '', '6', '', 'index', '0', '0', '0', '1', '8', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-04-09 13:54:02', '2014-03-14 21:16:21');
+INSERT INTO `base_site_menu` VALUES ('19', '1', '0', 'DataStructure', '联系我们', '19-', '0', '0', '', '2', '', 'index', '0', '0', '0', '1', '8', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-04-09 13:54:02', '2014-03-17 21:31:11');
 INSERT INTO `base_site_menu` VALUES ('20', '1', '0', 'Algorithm', '人力资源', '20-', '1', '0', '', '6', '', 'index', '0', '0', '0', '1', '7', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-04-09 14:07:29', '2014-03-14 21:15:55');
 INSERT INTO `base_site_menu` VALUES ('21', '1', '8', 'PHP', '行业动态', '8-21-', '1', '0', '', '2', '', 'index', '0', '0', '0', '1', '4', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-04-09 14:27:18', '2014-03-14 21:35:29');
 INSERT INTO `base_site_menu` VALUES ('22', '1', '6', 'JAVA', 'JAVA', '2-3-6-22-', '4', '0', '', '0', '', 'index', '0', '0', '0', '1', '3', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-04-09 14:34:36', '2013-04-09 14:34:36');
@@ -4980,28 +4957,30 @@ CREATE TABLE `base_site_plate` (
   PRIMARY KEY (`spid`),
   KEY `sid` (`sid`) USING BTREE,
   KEY `status` (`status`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8 COMMENT='面板管理';
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 COMMENT='面板管理';
 
 -- ----------------------------
 -- Records of base_site_plate
 -- ----------------------------
-INSERT INTO `base_site_plate` VALUES ('1', '1', '1', '默认面板', '2', 'span8,span4', '1', '1', '2013-03-24 15:51:46', '2013-11-12 14:57:04');
-INSERT INTO `base_site_plate` VALUES ('2', '1', '2', '默认面板', '3', '', '0', '1', '2013-03-24 15:56:22', '2013-03-24 15:56:22');
-INSERT INTO `base_site_plate` VALUES ('3', '1', '1', '项目案例', '1', '', '2', '0', '2013-03-25 14:45:03', '2013-11-12 18:03:15');
-INSERT INTO `base_site_plate` VALUES ('4', '1', '3', '默认面板', '2', 'span9,span3', '2', '1', '2013-11-06 13:59:04', '2013-11-12 15:33:37');
+INSERT INTO `base_site_plate` VALUES ('1', '1', '1', '现代原生态 招商', '2', 'span8 index_box,span4 index_box', '1', '1', '2013-03-24 15:51:46', '2014-03-17 23:09:23');
+INSERT INTO `base_site_plate` VALUES ('2', '1', '2', '默认面板', '3', '', '0', '1', '2013-03-24 15:56:22', '2014-03-17 22:22:39');
+INSERT INTO `base_site_plate` VALUES ('3', '1', '1', '产品 公司动态', '2', 'span8 index_box,span4 index_box', '3', '1', '2013-03-25 14:45:03', '2014-03-17 23:09:39');
+INSERT INTO `base_site_plate` VALUES ('4', '1', '3', '新闻列表', '1', '', '2', '1', '2013-11-06 13:59:04', '2014-03-18 00:06:45');
 INSERT INTO `base_site_plate` VALUES ('5', '1', '4', '默认面板', '2', 'span9,span3', '2', '1', '2013-11-06 14:52:45', '2013-11-07 16:29:15');
-INSERT INTO `base_site_plate` VALUES ('6', '1', '3', '面包屑', '1', 'span12', '1', '1', '2013-11-06 17:14:25', '2013-11-12 15:33:26');
+INSERT INTO `base_site_plate` VALUES ('6', '1', '3', '新闻中心分类', '1', 'span12', '1', '1', '2013-11-06 17:14:25', '2014-03-18 00:07:02');
 INSERT INTO `base_site_plate` VALUES ('7', '1', '4', '面包屑', '1', 'span12', '1', '1', '2013-11-06 17:23:18', '2013-11-07 16:32:07');
 INSERT INTO `base_site_plate` VALUES ('8', '1', '5', '面包屑', '1', 'span12', '1', '1', '2013-11-06 20:23:01', '2013-11-12 15:31:58');
 INSERT INTO `base_site_plate` VALUES ('9', '1', '5', '默认面板', '2', 'span9,span3', '2', '1', '2013-11-06 20:23:44', '2013-11-12 15:31:43');
 INSERT INTO `base_site_plate` VALUES ('10', '1', '6', '面包屑', '1', 'span12', '1', '1', '2013-11-06 20:24:12', '2013-11-07 16:50:43');
 INSERT INTO `base_site_plate` VALUES ('11', '1', '6', '默认面板', '2', 'span9,span3', '2', '1', '2013-11-06 20:24:21', '2013-11-07 16:50:50');
-INSERT INTO `base_site_plate` VALUES ('12', '1', '1', '我们的优势', '2', '', '0', '0', '2013-11-22 15:28:51', '2014-03-06 00:05:35');
+INSERT INTO `base_site_plate` VALUES ('12', '1', '1', 'line', '1', 'span12', '2', '1', '2013-11-22 15:28:51', '2014-03-18 00:32:07');
 INSERT INTO `base_site_plate` VALUES ('13', '1', '7', '默认面板', '1', '', '0', '1', '2014-03-13 00:11:38', '2014-03-13 00:11:38');
 INSERT INTO `base_site_plate` VALUES ('14', '1', '8', '面包屑', '1', '', '1', '1', '2014-03-13 00:12:00', '2014-03-13 00:12:00');
 INSERT INTO `base_site_plate` VALUES ('15', '1', '8', '默认面板', '2', '', '2', '1', '2014-03-13 00:12:24', '2014-03-13 00:12:24');
 INSERT INTO `base_site_plate` VALUES ('16', '1', '9', '面包屑', '1', '', '1', '1', '2014-03-13 00:12:51', '2014-03-13 00:12:51');
 INSERT INTO `base_site_plate` VALUES ('17', '1', '9', '默认面板', '2', '', '2', '1', '2014-03-13 00:13:01', '2014-03-13 00:13:01');
+INSERT INTO `base_site_plate` VALUES ('18', '1', '1', 'line', '1', 'span12', '4', '0', '2014-03-18 00:34:24', '2014-03-18 00:34:24');
+INSERT INTO `base_site_plate` VALUES ('19', '1', '1', '商品列表', '1', 'span12', '5', '1', '2014-03-18 00:36:14', '2014-03-18 00:36:37');
 
 -- ----------------------------
 -- Table structure for `base_site_plate_content`
@@ -5028,7 +5007,7 @@ CREATE TABLE `base_site_plate_content` (
   PRIMARY KEY (`id`),
   KEY `sid` (`sid`) USING BTREE,
   KEY `status` (`status`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COMMENT='面板内容管理';
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8 COMMENT='面板内容管理';
 
 -- ----------------------------
 -- Records of base_site_plate_content
@@ -5037,11 +5016,11 @@ INSERT INTO `base_site_plate_content` VALUES ('1', '1', '1', '公司简介', '',
 INSERT INTO `base_site_plate_content` VALUES ('2', '1', '1', '关于我们', '', '2', '1', '1', '1', '19', '10', '2', '0', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-03-24 20:42:09', '2013-03-31 14:49:20');
 INSERT INTO `base_site_plate_content` VALUES ('3', '1', '3', '广告', '', '1', '3', '0', '0', '3', '10', '0', '0', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-03-25 14:45:20', '2013-11-12 14:56:38');
 INSERT INTO `base_site_plate_content` VALUES ('4', '1', '1', '项目案例', '', '2', '1', '1', '8', '19', '10', '1', '0', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-03-25 15:06:14', '2013-11-12 13:27:11');
-INSERT INTO `base_site_plate_content` VALUES ('5', '1', '4', '列表', '', '1', '1', '1', '0', '107', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-06 13:59:32', '2013-11-12 15:48:30');
-INSERT INTO `base_site_plate_content` VALUES ('6', '1', '4', '侧栏导航', '', '2', '5', '1', '', '3', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-06 14:10:59', '2013-11-06 18:05:48');
+INSERT INTO `base_site_plate_content` VALUES ('5', '1', '4', '新闻列表', '', '1', '1', '1', '0', '123', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-06 13:59:32', '2014-03-18 00:06:25');
+INSERT INTO `base_site_plate_content` VALUES ('6', '1', '4', '侧栏导航', '', '2', '5', '1', '', '3', '10', '0', '-1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-06 14:10:59', '2013-11-06 18:05:48');
 INSERT INTO `base_site_plate_content` VALUES ('7', '1', '5', '列表', '', '1', '1', '4', '0', '363', '10', '2', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-06 14:53:13', '2013-11-06 17:06:05');
 INSERT INTO `base_site_plate_content` VALUES ('8', '1', '5', '侧栏导航', '', '2', '5', '4', '', '3', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-06 17:06:19', '2013-11-06 18:05:34');
-INSERT INTO `base_site_plate_content` VALUES ('9', '1', '6', '面包屑', '', '1', '4', '1', '', '3', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-06 17:14:46', '2013-11-06 17:14:46');
+INSERT INTO `base_site_plate_content` VALUES ('9', '1', '6', '新闻中心分类', '', '1', '5', '1', '', '3', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-06 17:14:46', '2014-03-17 23:39:40');
 INSERT INTO `base_site_plate_content` VALUES ('10', '1', '7', '面包屑', '', '1', '4', '4', '', '3', '10', '1', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-06 17:51:32', '2013-11-06 20:53:52');
 INSERT INTO `base_site_plate_content` VALUES ('11', '1', '8', '面包屑', '', '1', '4', '1', '', '3', '10', '1', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-06 20:25:21', '2013-11-06 22:22:37');
 INSERT INTO `base_site_plate_content` VALUES ('12', '1', '10', '面包屑', '', '1', '4', '4', '', '3', '10', '1', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-06 22:53:14', '2013-11-06 22:53:14');
@@ -5049,13 +5028,17 @@ INSERT INTO `base_site_plate_content` VALUES ('13', '1', '9', '列表', '', '1',
 INSERT INTO `base_site_plate_content` VALUES ('14', '1', '9', '侧栏列表', '', '2', '6', '1', '', '3', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-07 00:11:12', '2013-11-07 00:11:12');
 INSERT INTO `base_site_plate_content` VALUES ('15', '1', '11', '列表', '', '1', '3', '4', '', '515', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-07 00:12:11', '2013-11-07 00:45:22');
 INSERT INTO `base_site_plate_content` VALUES ('16', '1', '11', '侧栏列表', '', '2', '6', '4', '', '3', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-07 00:12:42', '2013-11-07 00:12:42');
-INSERT INTO `base_site_plate_content` VALUES ('17', '1', '3', '企业案例', 'span6', '1', '1', '1', '9', '19', '10', '2', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-12 13:37:46', '2014-03-03 19:56:24');
-INSERT INTO `base_site_plate_content` VALUES ('18', '1', '3', '大型网站案例', 'span6', '1', '1', '1', '10', '19', '10', '1', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-12 13:38:13', '2013-11-12 14:56:48');
-INSERT INTO `base_site_plate_content` VALUES ('19', '1', '1', '现代原生态', '', '1', '3', '1', '29', '579', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-06 00:06:27', '2014-03-17 18:09:48');
+INSERT INTO `base_site_plate_content` VALUES ('17', '1', '3', '产品', '', '1', '3', '1', '31', '513', '10', '2', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-12 13:37:46', '2014-03-17 23:00:50');
+INSERT INTO `base_site_plate_content` VALUES ('18', '1', '3', '大型网站案例', 'span6', '1', '1', '1', '10', '19', '10', '1', '0', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2013-11-12 13:38:13', '2013-11-12 14:56:48');
+INSERT INTO `base_site_plate_content` VALUES ('19', '1', '1', '现代原生态', '', '1', '3', '1', '29', '513', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-06 00:06:27', '2014-03-17 22:25:09');
 INSERT INTO `base_site_plate_content` VALUES ('20', '1', '14', '面包屑', '', '1', '4', '3', '', '3', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-13 00:17:42', '2014-03-13 00:17:42');
 INSERT INTO `base_site_plate_content` VALUES ('21', '1', '15', '列表', '', '1', '1', '3', '', '129', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-13 00:22:12', '2014-03-13 00:23:57');
 INSERT INTO `base_site_plate_content` VALUES ('22', '1', '15', '侧栏导航', '', '2', '5', '3', '', '3', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-13 00:25:54', '2014-03-13 00:26:34');
-INSERT INTO `base_site_plate_content` VALUES ('23', '1', '1', '招商', '', '2', '3', '1', '30', '577', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-17 18:11:15', '2014-03-17 18:11:15');
+INSERT INTO `base_site_plate_content` VALUES ('23', '1', '1', '招商', '', '2', '3', '1', '30', '513', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-17 18:11:15', '2014-03-17 22:46:41');
+INSERT INTO `base_site_plate_content` VALUES ('24', '1', '3', '公司动态', '', '2', '1', '1', '35', '19', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-17 23:01:49', '2014-03-18 00:59:52');
+INSERT INTO `base_site_plate_content` VALUES ('25', '1', '12', 'line', 'line', '1', '3', '1', '', '256', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-18 00:26:48', '2014-03-18 00:35:08');
+INSERT INTO `base_site_plate_content` VALUES ('26', '1', '18', 'line', 'line', '1', '3', '1', '', '256', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-18 00:35:45', '2014-03-18 00:35:45');
+INSERT INTO `base_site_plate_content` VALUES ('27', '1', '19', '商品列表', '', '1', '3', '1', '36', '512', '10', '0', '1', '1970-01-01 08:00:00', '1970-01-01 08:00:00', '2014-03-18 00:37:17', '2014-03-18 00:43:08');
 
 -- ----------------------------
 -- Table structure for `base_site_plate_group`

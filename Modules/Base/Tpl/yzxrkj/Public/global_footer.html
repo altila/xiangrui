@@ -50,7 +50,7 @@
     ================================================== -->
 	<footer class="footer">
 		<div class="container">
-			<require file="Base,Public/footer_nav"/>
+			<require file="Base,Menu/bottomMenu"/>
 
 			<ul class="footer_pic">
 				<li><a href="#" target="_blank"><img src="__CSS_IMG__/pic/p_a.jpg" width="100" height="138" alt=""/></a></li>
@@ -63,11 +63,24 @@
 			<div class="container">
 				<div class="row">
 					<div class="span6"><a href="#" target="_blank">隐私策略</a> • <a href="#" target="_blank">使用条款</a> • <a href="#" target="_blank">联系我们</a></div>
-					<div class="span6 text-right">湖南永州市祥瑞生物科技有限公司 &copyright; 2014 保留所有权利</div>
+					<div class="span6 text-right">湖南永州市祥瑞生物科技有限公司 &copyright; 2013-<span id="copyrightTime"></span> 保留所有权利</div>
 				</div>
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		//版权时间
+		$("#copyrightTime").html(new Date().getFullYear());
+
+		//图片延迟加载;
+		$("img").lazyload({
+			placeholder : defaultImg,
+			effect : "fadeIn"
+			//failurelimit : 20,
+			//threshold : 300
+		});
+	</script>
 
 
 </body>

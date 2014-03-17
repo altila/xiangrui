@@ -14,8 +14,7 @@
 
 			{//列表 开始 - 文章/博文}
 			<elseif condition=" in_array($vo['model'],array(1,4)) &&  $vo['type'] == 1 " />
-			<?php $listType = $vo['list_opt']; $modelName = $vo['model']; $list = $vo['data']; $list['smid'] = $vo['model_value'];?>
-			<h2><empty name="info['name']">{$vo['name']}<else/>{$info['name']}</empty></h2>
+			<?php $listType = $vo['list_opt']; $modelName = $vo['model']; $list = $vo['data']; $list['smid'] = $vo['model_value'];?>			
 			<require file="Base,Block/list" />
 
 			{//列表      - 商品}
@@ -33,15 +32,7 @@
 
 			{//单篇内容 开始}
 			<elseif condition=" in_array($vo['model'],array(1,4)) && $vo['type'] == 3 " />
-			<if condition=" ($vo['list_opt']&1) == 1 ">
-			<h2><empty name="info['name']">{$vo['name']}<else/>{$info['name']}</empty></h2>
-			</if>
-			<if condition=" ($vo['list_opt']&64) == 64 ">
-			<p>{$vo['data']['description']}</p>
-			</if>
-			<if condition=" ($vo['list_opt']&512) == 512 ">
-			<p>{$vo['data']['content']|htmlspecialchars_decode=ENT_QUOTES}</p>
-			</if>
+			<require file="Base,Block/singlePage" />
 			{//单篇内容 结束}
 
 			{//面包屑 开始}
