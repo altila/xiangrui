@@ -4,5 +4,9 @@ $name = !empty($name) ? $name : 'content';
 
 <textarea name="{$name}" rows="5" cols="57" id="ueditor_content_{:MODULE_NAME}">{$vo[$name]}</textarea>
 
-<script type="text/javascript">UE.getEditor('ueditor_content_{:MODULE_NAME}');</script>
+<script type="text/javascript">
+	var editor = UE.getEditor('ueditor_content_{:MODULE_NAME}');
+	editor.setOpt('allowDivTransToP',false);
+
+</script>
 

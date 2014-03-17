@@ -49,7 +49,7 @@
 						</form>
 					</div>
 
-					<if condition="  $_REQUEST['smid'] != null ">
+					<if condition="  $_REQUEST['smid'] != null and $_REQUEST['returnRequire'] != 1">
 					<div class="panelBar">
 						<ul class="toolBar">
 							<li><a class="add" href="__URL__/add?sid={$_REQUEST['sid']}&smid={$_REQUEST['smid']}" target="dialog" max="true" mask="true"><span>新增</span></a></li>
