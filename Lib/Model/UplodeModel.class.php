@@ -39,8 +39,9 @@ class UplodeModel extends ABaseModel {
 	*/
 	public function imageUp( $condition ) {
 		// 图片上传方法实例化
-		if( IS_BAE ) import("ORG.Net.UploadFile_bae",LIB_PATH);
-		else import("ORG.Net.UploadFile",LIB_PATH);
+		//if( IS_BAE ) import("ORG.Net.UploadFile_bae",LIB_PATH);
+		//else 
+			import("ORG.Net.UploadFile",LIB_PATH);
 
 		$uploadImg = new UploadFile();
 		// 设置附件上传大小
