@@ -116,7 +116,14 @@
   line-height: 30px;
   border: none;
 }
-.milestone_wrap td td .milestone_mark {
+.milestone_wrap .milestone_items {
+  height: 444px;
+}
+.milestone_wrap .m_item {
+  float: left;
+  width: 738px;
+}
+.milestone_mark {
   background: url(../images/bg_year.jpg) no-repeat;
   width: 115px;
   height: 134px;
@@ -125,13 +132,6 @@
   color: #fff;
   font-size: 22px;
   text-align: center;
-}
-.milestone_wrap .milestone_items {
-  height: 444px;
-}
-.milestone_wrap .m_item {
-  float: left;
-  width: 738px;
 }
 /* 战略 */
 .page_content .row {

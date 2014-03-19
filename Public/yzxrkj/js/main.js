@@ -19,5 +19,15 @@ $(function() {
 
 		});
 	}
+
+	// 公司足迹 - 发展历程
+	if ($(".milestone_items")) {
+		$(".milestone_items").scroller({
+	        item: ".m_item",
+	        count: 1
+	    });
+	}
 });
+
+        
 
