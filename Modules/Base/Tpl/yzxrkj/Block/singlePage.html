@@ -5,9 +5,21 @@
 	</div>
 </h2>
 </if>
+
 <if condition=" ($vo['list_opt']&64) == 64 ">
 <p>{$vo['data']['description']}</p>
 </if>
+
+<if condition=" ($vo['list_opt']&32) == 32 ">
+</div></div></div></div></div>
+<div class="bg_gradient">
+    <div class="container">
+        <img src="<empty name="vo['data']['thumbnail']">__CSS_IMG__/cover/a_1_1.jpg<else/>{$vo['data']['thumbnail']}</empty>" alt=""/>
+    </div>
+</div>
+<div><div><div><div><div>
+</if>
+
 <if condition=" ($vo['list_opt']&512) == 512 ">
 {$vo['data']['content']|htmlspecialchars_decode=ENT_QUOTES}
 </if>
