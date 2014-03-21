@@ -60,9 +60,10 @@ class HBaseAction extends BaseAction {
 		$this->setHead( $this->info, 2 );
 		if( !empty($_REQUEST['smid']) || !empty($this->info['smid']) ) {
 			$condition['smid'] = $_REQUEST['smid'] ? $_REQUEST['smid'] : $this->info['smid'];
-			$categoryInfo = D( "Base/ArticleCategory" )->getCategoryInfo( $condition, 'template' );
+			$categoryInfo = D( "Base/ArticleCategory" )->getCategoryInfo( $condition, 'template_list,template_info' );
 		}
-		$this->display( $categoryInfo['template'] );
+		$template = $_REQUEST['smid'] ? $categoryInfo['template_list'] : $categoryInfo['template_info'];
+		$this->display( $template );
 	}
 
 	/**
