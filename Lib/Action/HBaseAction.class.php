@@ -40,7 +40,7 @@ class HBaseAction extends BaseAction {
 		$code = GROUP_NAME.'_'.MODULE_NAME.'_'.ACTION_NAME;
 		$this->menuList = D( 'Base/Menu' )->getMenu( array('sid'=>$sid) );
 		$this->adList = D( 'Base/Ad' )->getAdPosList( array('apCode'=>$code, 'sid'=>$sid) );
-		$this->plateList = D( 'Base/Plate' )->getPlate( array('spgCode'=>$code, 'sid'=>$sid) );
+		$this->plateList = D( 'Base/Plate' )->getPlate( array('spgCode'=>$code, 'sid'=>$sid) );//print_r($this->plateList);
 		$this->eventAction();
 	}
 
@@ -79,8 +79,8 @@ class HBaseAction extends BaseAction {
 	*/
 	protected function setHead( $data, $type = 1 ) {
 		if( $type == 2 ){
-			$result = D( "Base/ArticleCategory" )->getBreadCrumbs( array( 'smid'=>$data['smid'] ) );
-			foreach( $result as $key=>$value )
+			$this->breadCrumbsList = D( "Base/ArticleCategory" )->getBreadCrumbs( array( 'smid'=>$data['smid'] ) );//print_r($this->breadCrumbsList);
+			foreach( $this->breadCrumbsList as $key=>$value )
 				$_data[] = $value['name'];
 			if( strpos(MODULE_NAME,'Category') == false ) $_data[] = $data['name'];
 			$data = $_data;krsort($data);

@@ -22,7 +22,7 @@ if( empty($info['crumb']) ) $crumbPid = $info['smid'];
 			<ul class="dropdown-menu">
 				<volist name="menu['_child']" id="vo">
 				<li <if condition=" ( !empty($vo['aiid']) and $_REQUEST['aiid'] == $vo['aiid'] ) or ( !empty($vo['smid']) and $info['smid'] == $vo['smid'] ) ">class="active"</if> >
-					<a <eq name="vo['is_open']" value="1">target="_blank"</eq> class="{$vo['class']} <eq name="vo['is_highlight']" value="1">red</eq>" href="<if condition=" !empty($vo['aiid']) ">{:getUrl( 'ArticleInfo', $vo )}<else/>{:getUrl( $vo['model'], $vo )}</if>" title="{$vo['name']}">{$vo['name']}</a>
+					<a <eq name="vo['is_open']" value="1">target="_blank"</eq> class="{$vo['class']} <eq name="vo['is_highlight']" value="1">red</eq>" href="<if condition=" $vo['type'] == 2 ">{$vo['link']}<elseif condition=" !empty($vo['aiid']) "/>{:getUrl( 'ArticleInfo', $vo )}<else/>{:getUrl( $vo['model'], $vo )}</if>" title="{$vo['name']}">{$vo['name']}</a>
 				</li>
 				</volist>
 			</ul>
