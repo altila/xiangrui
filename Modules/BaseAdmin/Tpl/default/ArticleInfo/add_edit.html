@@ -18,8 +18,14 @@
 				<input type="text" name="class" value="{$vo['class']}">
 			</div>
 			<div class="unit">
-				<label>文章缩略图：</label>
+				<label>缩略图：</label>
 				<require file="Admin,Block/formUpImage" />
+			</div>
+			<div class="unit">
+				<label>标题图：</label>
+				<img height="100" src="{$vo['img_url']}" />
+				<input type="hidden" name="img_url" value="{$vo['img_url']}" id="ueditor_img_url" />
+				<a href="javascript:void(0);" onclick="ueditorImgUrl.getDialog('insertimage').open();">上传图片</a>
 			</div>
 			<!--<div class="unit">
 				<label>文章来源：</label>
@@ -42,4 +48,20 @@
 		</div>
 	</form>
 </div>
+<script type="text/javascript">
+	var ueditorImgUrl = UE.getEditor('ueditor_img_url');
+	ueditorImgUrl.ready(function () {
+			//设置编辑器不可用
+			this.setDisabled();
+			//隐藏编辑器，因为不会用到这个编辑器实例，所以要隐藏
+			this.hide();
+			//侦听图片上传
+			this.addListener('beforeInsertImage', function (t, arg) {
+				//将地址赋值给相应的input,只去第一张图片的路径
+				$("#ueditor_img_url").val(arg[0].src);
+				//图片预览
+				$("#ueditor_img_url").prev("img").attr("src", arg[0].src);
+			});
+	});
+</script>
 

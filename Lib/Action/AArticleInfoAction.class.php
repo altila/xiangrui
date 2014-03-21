@@ -57,11 +57,11 @@ class AArticleInfoAction extends ABaseAction {
 		$uploadPath = C('TMPL_PARSE_STRING');
 		$_POST['content'] = htmlspecialchars( str_replace( $uploadPath['__UPLOAD__'], '__UPLOAD__', html2txt( stripslashes($content),array('script','style') ) ) );
 		//文章内图片
-		preg_match_all('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i',stripslashes($content),$match);
+		/**preg_match_all('/<\s*img\s+[^>]*?src\s*=\s*(\'|\")(.*?)\\1[^>]*?\/?\s*>/i',stripslashes($content),$match);
 		foreach( $match[2] as $key=>$val ){
 			if( strlen($url) <= 710 ) $url .= "{$val},";
 		}
-		$_POST['img_url'] = str_replace( $uploadPath['__UPLOAD__'], '__UPLOAD__', $url );
+		$_POST['img_url'] = str_replace( $uploadPath['__UPLOAD__'], '__UPLOAD__', $url );*/
 		if( empty($_POST['thumbnail']) ) $_POST['thumbnail'] = str_replace( $uploadPath['__UPLOAD__'], '__UPLOAD__', $match[2][0] );
 	}
 
