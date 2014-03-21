@@ -34,9 +34,8 @@ class MenuServiceModel extends SBaseModel {
 		if( empty($condition['sid']) ) return array( 'data'=>false, 'info'=>"获取失败", 'status'=>0 );
 		$result = $this->getMenuBySid( $condition, $field, $order, $limit );
 		foreach( $result as $key=>$value ) {
-			if( empty($value['_child']) && $value['type'] == 0 && $value['is_show_child'] == 1 )
-				if( $value['model'] == 1 )
-					$result[$key]['_child'] = D('BaseService/ArticleInfoService')->getListBySmid( array($pk=>$value[$pk]), 'aiid,name,sort' );
+			if( empty($value['_child']) && $value['type'] == 0 && $value['is_show_child'] == 1 && $value['model'] == 1 )
+				$result[$key]['_child'] = D('BaseService/ArticleInfoService')->getListBySmid( array($pk=>$value[$pk]), 'aiid,name,sort' );
 		}
 		//print_r($result);
 		return array( 'data'=>$result, 'info'=>"获取成功", 'status'=>1 );
