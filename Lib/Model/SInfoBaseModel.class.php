@@ -181,7 +181,7 @@ class SInfoBaseModel extends SBaseModel {
 		$infoAfter = $this->getListBySmid( $condition, $field, $order, $limit );
 		//组合数据
 		if( !empty($infoBefore) ) foreach( $infoBefore as $key=>$val ) $result[] = $val;
-		if( !empty($infoBefore) || !empty($infoAfter) ) $result[] = array( getModelPk($this->getModelName())=>$info[getModelPk($this->getModelName())], 'smid'=>$info['smid'], 'name'=>$info['name'], );
+		if( !empty($infoBefore) || !empty($infoAfter) ) $result[] = array( getModelPk($this->getModelName())=>$info[getModelPk($this->getModelName())], 'smid'=>$info['smid'], 'name'=>$info['name'], 'class'=>$info['class'] );
 		if( !empty($infoAfter) ) foreach( $infoAfter as $key=>$val ) $result[] = $val;
 		//print_r($result);
 		return $result;

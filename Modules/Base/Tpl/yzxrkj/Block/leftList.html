@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            <ul class="article_menu">
+            	<volist name="leftList" id="list">
+				<li>
+					<a title="{$list['name']}" href="{:getUrl( $modelName."_info", $list )}">
+					<span class="icon_sharp <empty name="list['class']">i_a_1_1<else/>{$list['class']}</empty>"></span>
+					{$list['name']}
+				</a>
+				</li>
+				</volist>
+            </ul>
+        </div>
+    </div>
+</div>
+
