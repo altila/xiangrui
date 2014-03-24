@@ -1,12 +1,11 @@
 <div class="gradient_border sidemenu">
 	<div class="gradient_border_inner">
-		<volist name="leftCategory" id="list">
 		<ul class="sidenav">
-			<!-- <li class="nav-header"><a title="{$list['name']}" href="{:getUrl( $list['model'], $list )}">{$list['name']}</a></li> -->
+		<volist name="leftCategory" id="list">
 			<volist name="list['_child']" id="vo">
 			<li class="{$vo['class']} <eq name="_REQUEST[getModelPk(MODULE_NAME)]" value="$vo[getModelPk(MODULE_NAME)]">active</eq>"><a title="{$vo['name']}" href="{:getUrl( $vo['model'], $vo )}">{$vo['name']}</a></li>
 			</volist>
-		</ul>
 		</volist>
+		</ul>
 	</div>
 </div>

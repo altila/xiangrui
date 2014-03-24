@@ -38,7 +38,7 @@ class HBaseAction extends BaseAction {
 	public function _before_index() {
 		$sid = getLang();
 		$code = GROUP_NAME.'_'.MODULE_NAME.'_'.ACTION_NAME;
-		$this->menuList = D( 'Base/Menu' )->getMenu( array('sid'=>$sid) );
+		$this->menuList = D( 'Base/Menu' )->getMenu( array('sid'=>$sid) );//print_r($this->menuList);
 		$this->adList = D( 'Base/Ad' )->getAdPosList( array('apCode'=>$code, 'sid'=>$sid) );
 		$this->plateList = D( 'Base/Plate' )->getPlate( array('spgCode'=>$code, 'sid'=>$sid) );//print_r($this->plateList);
 		$this->eventAction();

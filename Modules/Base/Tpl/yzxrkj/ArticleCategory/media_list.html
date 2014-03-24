@@ -6,7 +6,15 @@
 	<div class="row">
 		<div class="span12 gradient_border sidemenu">
 			<div class="gradient_border_inner">
-				<require file="Base,Block/sidenav"/>
+				<ul class="sidenav">
+					<volist name="menuList" id="volist">
+	                <eq name="volist['smid']" value="$breadCrumbsList[0]['smid']">
+	                <volist name="volist['_child']" id="vol">
+	                <li class="<if condition="$_REQUEST[getModelPk(MODULE_NAME)] == $vol[getModelPk(MODULE_NAME)]">active</if>"><a href="{:getUrl(1,$vol)}">{$vol['name']}</a></li>
+	                </volist>
+	                </eq>
+	                </volist>
+                </ul>
 			</div>
 		</div>
 	</div>
@@ -24,13 +32,9 @@
 {//文章列表}
 <div class="page_wrap">
 	<div class="container">
-		<div class="row">
+		<div class="row">			
 			
-			<?php 
-			for ($i=0; $i < 6 ; $i++) { 
-			?>		
 			<div class="span4 media-object">
-				{//media}
 				<div class="media">
 					<div class="gradient_border">
 						<div class="gradient_border_inner">
@@ -47,9 +51,7 @@
 					</div>
 				</div>
 			</div>
-			<?php 
-				}
-			?>
+			
 			
 			{//分页}
 			<div class="span12">
