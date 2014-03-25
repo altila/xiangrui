@@ -28,7 +28,7 @@ class ProductInfoModel extends HInfoBaseModel {
 	+----------------------------------------------------------
 	*/
 	public function getList( $condition = array(), $field = '', $order = '', $limit = '' ) {
-		$field = 'pgid,name,code,market_price,thumbnail';
+		$field = '*';
 		$result = parent::getList( $condition, $field, $order, $limit );
 		if( $result['totalCount'] > 0 )
 			foreach( $result['data'] as $key=>$val ) {

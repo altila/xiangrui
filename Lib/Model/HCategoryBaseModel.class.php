@@ -27,7 +27,7 @@ class HCategoryBaseModel extends HBaseModel {
 	public function getCategory( $condition = array(), $field = '', $order = '', $limit = '' ) {
 		$groupName = GROUP_NAME;
 		$modelName = $this->getModelName();
-		$field = $field ? $field : 'smid,parent_id,code,name,crumb,model,type,link';
+		$field = $field ? $field : 'smid,parent_id,code,name,crumb,model,type,link,class';
 		if( !empty($condition['parent_id']) )
 			$key = C($modelName) . "{$condition['parent_id']}";
 		else
@@ -103,7 +103,7 @@ class HCategoryBaseModel extends HBaseModel {
 	public function getLeftCategory( $condition = array(), $field = '', $order = '', $limit = '' ) {
 		$groupName = GROUP_NAME;
 		$modelName = $this->getModelName();
-		$field = $field ? $field : 'smid,parent_id,code,name,crumb,model,type,link';
+		$field = $field ? $field : 'smid,parent_id,code,name,crumb,model,type,link,class';
 		if( !empty($condition['smid']) )
 			$key = C($modelName) . "LeftCategory_smid_{$condition['smid']}";
 		else

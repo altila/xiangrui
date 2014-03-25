@@ -1,0 +1,118 @@
+<volist name="list[data]" id="vo">
+<div class="container">
+	<div class="row">
+		<div class="span3">
+			<div class="goods_pic">
+				<img original="{$vo['thumbnail']}" src="{:C('DEFAULT_IMG')}" alt="{$vo['name']}" width="100%"/>
+				<div class="goods_tag {$vo['class']}"></div>
+			</div>
+		</div>
+		<div class="span8 offset1 product_info">
+			<div class="detail_intro">{$vo['md']['content']|htmlspecialchars_decode=ENT_QUOTES}
+				<h2>百里挑一</h2>
+				<p>每1kg新鲜食用菌中，只能出产挑选出约10g</p>
+				<h2>内外兼修</h2>
+				<p>严格参照祥瑞A+标准甄选，品相与营养成分俱佳</p>
+			</div>
+
+			<div class="buy">
+				<a href="#"><span>立即购买</span></a>
+			</div>
+
+			<table>
+				<tr>
+					<td class="td_t">产品名</td>
+					<td class="td_c">{$vo['name']}</td>
+				</tr>
+				<tr>
+					<td class="td_t">净含量</td>
+					<td class="td_c">{$vo['weight']}</td>
+				</tr>
+				<tr>
+					<td class="td_t">特点</td>
+					<td class="td_c">&nbsp;</td>
+				</tr>
+			</table>
+
+			<div class="line"><span></span></div>
+
+			<table>
+				<tr>
+					<td class="td_t">贮存方式</td>
+					<td class="td_c">{$vo['storage']}</td>
+				</tr>
+				<tr>
+					<td class="td_t">冷藏保存天数</td>
+					<td class="td_c">{$vo['refrigeration_datas']}</td>
+				</tr>
+				<tr>
+					<td class="td_t">常温保存天数</td>
+					<td class="td_c">{$vo['homoeothermy_datas']}</td>
+				</tr>
+			</table>
+
+			<div class="line"><span></span></div>
+
+			<table>
+				<tr>
+					<td class="td_t">出品地</td>
+					<td class="td_c">{$vo['publisher']}</td>
+				</tr>
+				<tr>
+					<td class="td_t">生产商</td>
+					<td class="td_c">{$vo['manufacturers']}</td>
+				</tr>
+				<tr>
+					<td class="td_t">生产地</td>
+					<td class="td_c">{$vo['production']}</td>
+				</tr>
+			</table>
+
+			<div class="detail_box">
+				<h2 class="box_title">
+					<div class="gradient_border">
+						<div class="gradient_border_inner">现代原生态</div>
+					</div>
+				</h2>
+				<div class="box_content">{$vo['xdyst']['content']|htmlspecialchars_decode=ENT_QUOTES}</div>
+			</div>
+
+			<div class="detail_box">
+				<h2 class="box_title">
+					<div class="gradient_border">
+						<div class="gradient_border_inner">健康美味贴士</div>
+					</div>
+				</h2>
+				<div class="box_content">{$vo['jkmwts']['content']|htmlspecialchars_decode=ENT_QUOTES}</div>
+			</div>
+
+			<div class="detail_box">
+				<h2 class="box_title">
+					<div class="gradient_border">
+						<div class="gradient_border_inner">美味搭配</div>
+					</div>
+				</h2>
+				<div class="box_content">{$vo['mwdp']['content']|htmlspecialchars_decode=ENT_QUOTES}
+					<img src="/PublIc/luckyli/images/pic/2.jpg" alt="" class="media-pic"/>
+					<div>
+						<p>
+						食用菌有金针菇、杏鲍菇、秀珍菇等；开发循环产品有食用菌原汁酱油、食用菌速食系列、食用菌提取液以及由菌渣制取的有机肥、有机饲料、有机颗粒燃料等；有机养殖有土猪、韩牛、虫草鸡等；
+						有机种植有芦荟、彩椒等时尚高档果蔬。
+						</p>
+						<div class="media-more"><a href="#" class="link-more"></a></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="article_share">
+					分享到：
+					<div class="bdsharebuttonbox">
+						<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+						<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</volist>
+
